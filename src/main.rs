@@ -46,7 +46,8 @@ fn hardware_setup() -> Hardware {
     }
 }
 
-impl core::fmt::Write for Hardware {
+impl core::fmt::Write for Hardware
+{
     fn write_str(&mut self, _msg: &str) -> core::fmt::Result {
         // Write _msg to the screen, converting to the video character set as
         // required.
