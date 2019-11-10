@@ -1,19 +1,15 @@
-# Checks code formatting for Neotron XXX BIOS
+name: Format
 
 on: [push, pull_request]
 
-name: Check Formatting
-
 jobs:
-  build:
-    name: Build
+  check:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-      - uses: actions-rs/cargo@v1
-        with:
-          command: fmt
-          args: -- --check
+    - uses: actions/checkout@v1
+    - name: Add Tool
+      run: rustup component add rustfmt
+    - name: Check Format
+      run: cargo fmt -- --check

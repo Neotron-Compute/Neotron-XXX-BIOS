@@ -5,6 +5,10 @@
 
 This is the [Neotron](https://github.com/neotron-compute) BIOS for the FooBar XYZ development board.
 
+![Build Status](https://github.com/$GITHUB_USERNAME/$GITHUB_REPO/workflows/Build/badge.svg "Github Action Build Status")
+
+![Format Status](https://github.com/$GITHUB_USERNAME/$GITHUB_REPO/workflows/Format/badge.svg "Github Action Format Check Status")
+
 ## Compatibility
 
 This BIOS will run on the official FooBar XYZ Developer Kit, and also the FooBar XYZ Explorer board. Both feature the same FooBar XYZ SoC. Other boards with the same SoC can be supported with a minor change to the pin configurations.
